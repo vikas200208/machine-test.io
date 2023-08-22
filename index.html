@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+
+<!-- link css -->
+<link rel="stylesheet" href="/asset/css/style.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <h2>Bank Loan Application Form</h2>
+        <p id="heading"><span class="star">*</span>Kindly enter the correct information in the Loan Application Form</p>
+        <br>
+        <form action="confirm.html" netlify="">
+            <label>Full Name :</label><br>
+            <input type="text" class="input" id="name" pattern="[a-zA-Z]{2,}[ ][a-zA-Z ]{2,}"
+                title="Format should be like: 'abc xyz'" placeholder="" required="">
+            <br><br>
+
+            <label>Email :</label><br>
+            <input type="text" class="input" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                title="Format should be like: 'abcd@xyz.com'" placeholder="" required="">
+            <br><br>
+
+            <label>PAN :</label><br>
+            <input type="text" class="input" id="pan" maxlength="10"
+                pattern="[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z][0-9][0-9][0-9][0-9][a-zA-Z]"
+                title="Format should be like: 'ABCDE1234F'" placeholder="" required="">
+            <br><br>
+
+            <label>Enter Loan Amount(Rs.) :</label><br>
+            <input type="text" class="input" id="amount" maxlength="9" pattern="^[0-9]*$" required="">
+            <br><br>
+
+            <label>Loan Tenure(Year) :</label>
+            <input type="text" class="input" id="year" maxlength="2" pattern="^[0-9]*$"
+                title="Format should be like: '1-99'" placeholder="" required="">
+            <br><br>
+
+            <input type="button" id="emi-btn" onclick="total_emi()" value="Calculate EMI">
+            <p id="estimate">Estimated EMI : <span id="result"></span></p>
+
+
+            <input type="submit" class="btn2" onclick="submit_data()">
+            <input type="reset" class="btn2" onclick="clr()">
+        </form>
+    </div>
+
+    <script src="/script.js">
+
+        
+    </script>
+
+
+
+</body>
+
+</html>

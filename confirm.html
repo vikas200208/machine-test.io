@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation!</title>
+
+   <!-- link css -->
+   <link rel="stylesheet" href="/asset/css/confirm_style.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <h2>Bank Loan Application Form</h2>
+        <p>Dear <span id="name">null</span>,<br>
+            Thank you for your inquiry.<br>
+            A four digit verification number has been sent to your Email : <span id="email"> null </span>,<br>
+            Please enter it in the following box and submit for confirmation:</p>
+        <br>
+
+        <label>Enter the OTP :</label><br><br>
+        <input class="input" id="otp" type="text"><br><br>
+        <button class="btn2" id="validate" onclick="validate()">Validate</button>
+        <button class="btn2" id="back" onclick="history.back()">Back</button>
+        <br><br><br>
+
+        <div id="warning"></div>
+
+        <div id="success-div">
+            <div id="sub1"><img src="/asset/images/check.png"></div>
+            <div id="sub2">Validation Successful !</div>
+        </div>
+
+        <div id="fail-div">
+            <div id="sub11"><img src="/asset/images/remove.png"></div>
+            <div id="sub22">Validation Failed !</div>
+        </div>
+
+
+
+
+
+
+        <script src="/method.js">
+
+           
+
+        </script>
+
+
+    </div>
+</body>
+
+</html>
